@@ -8,11 +8,9 @@ class LoginForm extends Component {
   state = { email: '', password: '', error: '', loading: false };
 
   renderButton() {
-
     if(this.state.loading) {
        return <Spinner size="small"/>
     }
-
     return(
       <Button onPress={this.onButtonPress.bind(this)}>
         Log in
